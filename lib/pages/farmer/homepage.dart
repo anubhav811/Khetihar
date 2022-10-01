@@ -40,6 +40,20 @@ class FarmerHomePageState extends State<FarmerHomePage> {
         automaticallyImplyLeading: false,
         title: Text(titleList[_currentIndex]),
       ),
+      drawer: Drawer(
+        child: ListView(
+          children: <Widget>[
+            UserAccountsDrawerHeader(
+                accountName: Text("KhetiHar"), accountEmail: Text("")),
+            ListTile(
+              title: Text("Log Out"),
+              onTap: () {
+                Navigator.popUntil(context, ModalRoute.withName("/"));
+              },
+            ),
+          ],
+        ),
+      ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         currentIndex: _currentIndex,

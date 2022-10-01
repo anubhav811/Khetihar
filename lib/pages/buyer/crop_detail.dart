@@ -99,7 +99,6 @@ class _CropDetailState extends State<CropDetail> {
                             ),
                             // uppdate screen
                             onPressed: () {
-                              first = false;
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
@@ -108,6 +107,7 @@ class _CropDetailState extends State<CropDetail> {
                                       NewRequest(crop: widget.crop),
                                 ),
                               );
+                              first = false;
                             },
                             child:
                                 "Request Status : $status".text.xl.bold.make(),
