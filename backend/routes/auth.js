@@ -70,4 +70,19 @@ authRouter.post('/api/buyersignin', async(req, res) => {
 
     }
 });
+// authRouter.post("/api/addCrops",async(req,res)=>{
+
+//     const data = req.body;
+//     var newItem =  new itemModel(data);
+//     try {
+//         await newItem.save();
+//         console.log("Crop added");
+//         console.log(newItem);
+//         res.status(201).send("Crop Successfully added");
+//       } catch (error) {
+//         res.status(400).send(error);
+//       }
+
+    
+// })
 module.exports = authRouter;
