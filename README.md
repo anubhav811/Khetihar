@@ -19,5 +19,8 @@ UI of our application: https://www.figma.com/file/Gu41uwTHHtNkOb4ZnU55DH/Untitle
 ![Frame 14](https://user-images.githubusercontent.com/80596385/193409138-28428db9-7830-45f9-93e6-064ee5be0457.png)
 ![Group 5465](https://user-images.githubusercontent.com/80596385/193409315-46b9ce72-9765-4ed0-be63-ad9cb93961a7.png)
 ![Group 5471](https://user-images.githubusercontent.com/80596385/193409157-a8aabced-0f36-4b88-ad13-3b1493b307c3.png)
+# Farmer having feature phone
+![WhatsApp Image 2022-10-01 at 19 02 45](https://user-images.githubusercontent.com/80596385/193412056-be8213b0-f236-4818-b698-d2981e3981a1.jpeg)
+
 
 
