@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:khetihar/pages/buyer/login.dart';
 import 'package:khetihar/pages/buyer/signup.dart';
+import 'package:khetihar/pages/farmer/homepage.dart';
 import 'package:khetihar/pages/farmer/login.dart';
 import 'package:khetihar/pages/landing_page.dart';
 import 'package:khetihar/utils/routes.dart';
@@ -19,11 +20,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
+      debugShowCheckedModeBanner: false,
       initialRoute: "/",
       routes: {
         '/': (context) => LandingPage(),
         "/flogin": (context) => FarmerLogin(),
         "/fsignup": (context) => FarmerSignUp(),
+        "/fhome": (context) => FarmerHomePage(),
         "/blogin": (context) => BuyerLogin(),
         "/bsignup": (context) => BuyerSignUp(),
       },
