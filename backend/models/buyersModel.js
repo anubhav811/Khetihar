@@ -3,6 +3,7 @@ var buyersSchema = new mongoose.Schema({
     Name: String,
     Phone: String,
     Pincode:String,
+    Password: String,
   
 });
  

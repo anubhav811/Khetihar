@@ -4,11 +4,7 @@ var farmersSchema = new mongoose.Schema({
     AccNo: String,
     Pin:String,
     Phone:String,
-    Crops: ({
-        name:String,
-        price:String,
-        stock:String,
-    })
+    Password: String,
 });
  
 
