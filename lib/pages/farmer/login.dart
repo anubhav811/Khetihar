@@ -13,7 +13,7 @@ class FarmerLogin extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                200.heightBox,
+                150.heightBox,
                 const Text(
                   "Welcome",
                   style: TextStyle(
@@ -82,6 +82,27 @@ class FarmerLogin extends StatelessWidget {
                                   fontWeight: FontWeight.bold,
                                   fontSize: 18,
                                 )),
+                          ),
+                        ),
+                      ),
+                      20.heightBox,
+                      // add text
+                      "Forgot Password?".text.xl2.bold.make(),
+                      20.heightBox,
+                      // add text
+                      "Don't have an account?".text.xl2.bold.make(),
+                      10.heightBox,
+                      // add text
+                      InkWell(
+                        onTap: () {
+                          Navigator.pushNamed(context, "/fsignup");
+                        },
+                        child: Text(
+                          "Sign Up",
+                          style: TextStyle(
+                            color: Colors.green,
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
                           ),
                         ),
                       ),
