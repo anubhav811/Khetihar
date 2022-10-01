@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@vonage/cli": "^1.1.4",
+    "@vonage/server-sdk": "^2.12.0-beta.2"
+  },
+  
+    "type" : "module"
+  
+  
+}
