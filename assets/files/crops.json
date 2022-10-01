@@ -4,7 +4,17 @@
             "id": 1,
             "name": "Wheat",
             "price": "3044",
-            "stock": "242"
+            "stock": "242",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Vehn%C3%A4pelto_6.jpg",
+            "location": "Haryana"
+        },
+        {
+            "id": 2,
+            "name": "Rice",
+            "price": "3042",
+            "stock": "242",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Vehn%C3%A4pelto_6.jpg",
+            "location": "Rajasthan"
         }
     ]
 }

@@ -4,15 +4,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:khetihar/models/crop.dart';
 import 'package:khetihar/pages/farmer/addcrop.dart';
-import 'package:khetihar/pages/farmer/crop_detail.dart';
+import 'package:khetihar/pages/buyer/crop_detail.dart';
 import 'package:velocity_x/velocity_x.dart';
 
-class YourCrops extends StatefulWidget {
+class FindCrops extends StatefulWidget {
   @override
-  State<YourCrops> createState() => YourCropsState();
+  State<FindCrops> createState() => FindCropsState();
 }
 
-class YourCropsState extends State<YourCrops> {
+class FindCropsState extends State<FindCrops> {
   @override
   void initState() {
     super.initState();
@@ -33,17 +33,6 @@ class YourCropsState extends State<YourCrops> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => AddCrop(),
-            ),
-          );
-        },
-        child: Icon(Icons.add),
-      ),
       body: SafeArea(
         child: Container(
           padding: Vx.m2,

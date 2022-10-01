@@ -1,41 +1,45 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:khetihar/pages/buyer/login.dart';
+import 'package:khetihar/pages/buyer/profile.dart';
+import 'package:khetihar/pages/farmer/farmer_req.dart';
 import 'package:khetihar/pages/farmer/login.dart';
 import 'package:khetihar/pages/farmer/profile.dart';
 import 'package:khetihar/pages/farmer/signup.dart';
 import 'package:khetihar/pages/farmer/your_crops.dart';
 
-import 'farmer_req.dart';
+import 'buyer_req.dart';
+import 'find_crops.dart';
 
-class FarmerHomePage extends StatefulWidget {
+class BuyerHomePage extends StatefulWidget {
   @override
-  FarmerHomePageState createState() => FarmerHomePageState();
+  BuyerHomePageState createState() => BuyerHomePageState();
 }
 
-class FarmerHomePageState extends State<FarmerHomePage> {
+class BuyerHomePageState extends State<BuyerHomePage> {
   int _currentIndex = 0;
   _getDrawerItemWidget(int pos) {
     switch (pos) {
       case 0:
-        return YourCrops();
+        return FindCrops();
       case 1:
-        return FarmerRequests();
+        return BuyerRequests();
       case 2:
-        return FarmerProfile();
+        return BuyerProfile();
 
       default:
         return new Text("Error");
     }
   }
 
-  List<String> titleList = ["Your Crops", "Received Requests", "Profile"];
+  List<String> titleList = ["Find Crops", "Requests", "Profile"];
 
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
     final textTheme = Theme.of(context).textTheme;
 
     return Scaffold(
+      // add option menu with log out button
       appBar: AppBar(
         automaticallyImplyLeading: false,
         title: Text(titleList[_currentIndex]),
@@ -56,10 +60,10 @@ class FarmerHomePageState extends State<FarmerHomePage> {
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.explore),
-            label: "Your Crops",
+            label: "Find Crops",
           ),
           BottomNavigationBarItem(
-            label: "Received Requests",
+            label: "Your Requests",
             icon: Icon(Icons.note),
           ),
           BottomNavigationBarItem(

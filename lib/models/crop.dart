@@ -2,9 +2,7 @@
 import 'dart:convert';
 
 class CropCatalog {
-  static List<Crop> crops = [
-    Crop(id: 1, name: "Wheat", price: "3000", stock: "41234")
-  ];
+  static List<Crop> crops = [];
 }
 
 class Crop {
@@ -12,11 +10,15 @@ class Crop {
   final String name;
   final String price;
   final String stock;
+  final String image;
+  final String location;
   Crop({
     required this.id,
     required this.name,
     required this.price,
     required this.stock,
+    required this.image,
+    required this.location,
   });
 
   Crop copyWith({
@@ -24,12 +26,16 @@ class Crop {
     String? name,
     String? price,
     String? stock,
+    String? image,
+    String? location,
   }) {
     return Crop(
       id: id ?? this.id,
       name: name ?? this.name,
       price: price ?? this.price,
       stock: stock ?? this.stock,
+      image: image ?? this.image,
+      location: location ?? this.location,
     );
   }
 
@@ -39,6 +45,8 @@ class Crop {
       'name': name,
       'price': price,
       'stock': stock,
+      'image': image,
+      'location': location,
     };
   }
 
@@ -48,6 +56,8 @@ class Crop {
       name: map['name'] as String,
       price: map['price'] as String,
       stock: map['stock'] as String,
+      image: map['image'] as String,
+      location: map['location'] as String,
     );
   }
 
@@ -58,7 +68,7 @@ class Crop {
 
   @override
   String toString() {
-    return 'Crop(id: $id, name: $name, price: $price, stock: $stock)';
+    return 'Crop(id: $id, name: $name, price: $price, stock: $stock, image: $image, location: $location)';
   }
 
   @override
@@ -68,11 +78,18 @@ class Crop {
     return other.id == id &&
         other.name == name &&
         other.price == price &&
-        other.stock == stock;
+        other.stock == stock &&
+        other.image == image &&
+        other.location == location;
   }
 
   @override
   int get hashCode {
-    return id.hashCode ^ name.hashCode ^ price.hashCode ^ stock.hashCode;
+    return id.hashCode ^
+        name.hashCode ^
+        price.hashCode ^
+        stock.hashCode ^
+        image.hashCode ^
+        location.hashCode;
   }
 }

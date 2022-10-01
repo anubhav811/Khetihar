@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:khetihar/pages/buyer/homepage.dart';
 import 'package:khetihar/pages/buyer/login.dart';
 import 'package:khetihar/pages/buyer/signup.dart';
 import 'package:khetihar/pages/farmer/homepage.dart';
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
         "/fhome": (context) => FarmerHomePage(),
         "/blogin": (context) => BuyerLogin(),
         "/bsignup": (context) => BuyerSignUp(),
+        "/bhome": (context) => BuyerHomePage(),
       },
     );
   }

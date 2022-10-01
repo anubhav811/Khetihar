@@ -70,7 +70,7 @@ class BuyerLogin extends StatelessWidget {
                         color: Colors.green,
                         borderRadius: BorderRadius.circular(8),
                         child: InkWell(
-                          onTap: () => Navigator.pushNamed(context, "/fhome"),
+                          onTap: () => Navigator.pushNamed(context, "/bhome"),
                           child: AnimatedContainer(
                             width: context.screenWidth,
                             height: 50,
