@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:khetihar/pages/farmer/homepage.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 class FarmerSignUp extends StatelessWidget {
@@ -133,7 +134,12 @@ class FarmerSignUp extends StatelessWidget {
                         color: Colors.green,
                         borderRadius: BorderRadius.circular(8),
                         child: InkWell(
-                          // onTap: () => moveToHome(context),
+                          // navigate to home
+                          onTap: () => Navigator.push(
+                              // navigate to home
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => FarmerHomePage())),
                           child: AnimatedContainer(
                             width: context.screenWidth,
                             height: 50,

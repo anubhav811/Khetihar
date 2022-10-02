@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:khetihar/pages/farmer/chat.dart';
 import 'package:khetihar/pages/farmer/updatecrop.dart';
 import 'package:velocity_x/velocity_x.dart';
 
@@ -148,27 +149,10 @@ class _RequestPageState extends State<RequestPage> {
                                 backgroundColor:
                                     MaterialStateProperty.all(Colors.black)),
                             onPressed: () {
-                              // showDialog(
-                              //     context: context,
-                              //     builder: (BuildContext context) {
-                              //       return AlertDialog(
-                              //         title: const Text("Chat with Buyer"),
-                              //         content: const Text(
-                              //             "Are you sure you want to accept this request?"),
-                              //         actions: [
-                              //           TextButton(
-                              //             onPressed: () {
-                              //               // go back to homescreen
-                              //               Navigator.pop(context);
-                              //             },
-                              //             child: const Text("Cancel"),
-                              //           ),
-                              //           TextButton(
-                              //             onPressed: () {},
-                              //             child: const Text("Accept"),
-                              //           ),
-                              //         ],
-                              //       );
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => Chat()));
                               //     });
                             },
                             child: "Chat With Buyer".text.xl.bold.make(),

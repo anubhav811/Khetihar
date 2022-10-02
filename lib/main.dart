@@ -6,12 +6,12 @@ import 'package:khetihar/pages/farmer/homepage.dart';
 import 'package:khetihar/pages/farmer/login.dart';
 import 'package:khetihar/pages/landing_page.dart';
 import 'package:khetihar/utils/routes.dart';
-
 import 'pages/farmer/signup.dart';
 
 void main() {
   runApp(MyApp());
 }
+
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

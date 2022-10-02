@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:khetihar/pages/buyer/homepage.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 class BuyerSignUp extends StatelessWidget {
@@ -112,7 +113,11 @@ class BuyerSignUp extends StatelessWidget {
                         color: Colors.green,
                         borderRadius: BorderRadius.circular(8),
                         child: InkWell(
-                          // onTap: () => moveToHome(context),
+                          onTap: () => Navigator.push(
+                              // navigate to home
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => BuyerHomePage())),
                           child: AnimatedContainer(
                             width: context.screenWidth,
                             height: 50,

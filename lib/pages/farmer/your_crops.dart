@@ -21,7 +21,7 @@ class YourCropsState extends State<YourCrops> {
 
   loadData() async {
     await Future.delayed(const Duration(seconds: 2));
-    final cropJson = await rootBundle.loadString("assets/files/crops.json");
+    final cropJson = await rootBundle.loadString("assets/files/crop.json");
     final decodedData = jsonDecode(cropJson);
     var cropsData = decodedData["crops"];
     print(cropsData);

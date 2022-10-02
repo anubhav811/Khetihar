@@ -109,13 +109,13 @@ class _AddCropState extends State<AddCrop> {
                               ),
                               TextButton(
                                 onPressed: () {
-                                  CropCatalog.crops.add(Crop(
-                                      id: CropCatalog.crops.length + 1,
-                                      name: nameController.text,
-                                      price: priceController.text,
-                                      stock: stockController.text,
-                                      location: locationController.text,
-                                      image: ''));
+                                  // CropCatalog.crops.add(Crop(
+                                  //     id: CropCatalog.crops.length + 1,
+                                  //     name: nameController.text,
+                                  //     price: priceController.text,
+                                  //     stock: stockController.text,
+                                  //     location: locationController.text,
+                                  //     image: ''));
                                   ScaffoldMessenger.of(context).showSnackBar(
                                       SnackBar(
                                           content:

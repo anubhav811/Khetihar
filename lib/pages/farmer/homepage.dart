@@ -48,7 +48,30 @@ class FarmerHomePageState extends State<FarmerHomePage> {
             ListTile(
               title: Text("Log Out"),
               onTap: () {
-                Navigator.popUntil(context, ModalRoute.withName("/"));
+                //alert dialog
+                showDialog(
+                    context: context,
+                    builder: (BuildContext context) {
+                      return AlertDialog(
+                        title: Text("Log Out"),
+                        content: Text("Are you sure you want to log out?"),
+                        actions: <Widget>[
+                          ElevatedButton(
+                            child: Text("Yes"),
+                            onPressed: () {
+                              Navigator.popUntil(
+                                  context, ModalRoute.withName("/"));
+                            },
+                          ),
+                          ElevatedButton(
+                            child: Text("No"),
+                            onPressed: () {
+                              Navigator.pop(context);
+                            },
+                          )
+                        ],
+                      );
+                    });
               },
             ),
           ],
